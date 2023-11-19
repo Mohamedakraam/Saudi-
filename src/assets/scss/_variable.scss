@@ -42,7 +42,7 @@ $sidebar-width-mini: 65px;
 // 
 // Layout settings
 // 
-$page-wrapper-max-width: 1300px;
+$page-wrapper-max-width: 1500px;
 
 // 
 // Common settings
@@ -102,7 +102,7 @@ $colors: (
   "gray-dark": $gray-800,
 );
 
-$primary: $primary!default;
+$primary: $primary !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $blue !default;
@@ -113,29 +113,28 @@ $dark: $gray-800 !default;
 $muted: $gray-500 !default;
 $cyan: $cyan !default;
 $orange: $orange !default;
-$theme-colors: () !default;
+$theme-colors: (
+  ) !default;
 
-$theme-colors: map-merge(
-  (
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark,
-    "muted": $muted,
-    "cyan": $cyan,
-    "orange": $orange,
-    "purple": $purple,
-    "light-primary": $light-primary,
-    "light-info": $light-info,
-    "light-warning": $light-warning,
-    "light-danger": $light-danger,
-    "light-success": $light-success,
-  ),
-  $theme-colors
+$theme-colors: map-merge(("primary": $primary,
+      "secondary": $secondary,
+      "success": $success,
+      "info": $info,
+      "warning": $warning,
+      "danger": $danger,
+      "light": $light,
+      "dark": $dark,
+      "muted": $muted,
+      "cyan": $cyan,
+      "orange": $orange,
+      "purple": $purple,
+      "light-primary": $light-primary,
+      "light-info": $light-info,
+      "light-warning": $light-warning,
+      "light-danger": $light-danger,
+      "light-success": $light-success,
+    ),
+    $theme-colors
 );
 
 // 
@@ -181,7 +180,7 @@ $h6-font-size: 12px !default;
 
 $headings-margin-bottom: 8px !default;
 $headings-font-weight: 400 !default;
-$headings-color:  #1e2a35 !default;
+$headings-color: #1e2a35 !default;
 
 // Font size
 $font-sizes: (
@@ -201,8 +200,7 @@ $display-font-sizes: (
   4: 3.5rem,
   5: 3rem,
   6: 2.5rem,
-  7: 2rem
-) !default;
+  7: 2rem) !default;
 
 // 
 // Cards
@@ -223,7 +221,7 @@ $btn-border-radius-sm: 4px !default;
 $btn-border-radius-lg: 4px !default;
 $btn-box-shadow: none !default;
 $btn-focus-box-shadow: none !default;
-$btn-close-focus-shadow:     none !default;
+$btn-close-focus-shadow: none !default;
 
 // 
 // Progressbar
@@ -289,7 +287,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1600px,
-) !default;
+  ) !default;
 
 // 
 // Navbar
