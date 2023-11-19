@@ -12,16 +12,16 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/component/alert',
-    title: 'Alert',
-    icon: 'bi bi-bell',
+    title: 'ادخال الالقاب',
+    icon: 'bi bi-card-text',
     class: '',
     extralink: false,
     submenu: []
   },
   {
     path: '/component/badges',
-    title: 'Badges',
-    icon: 'bi bi-patch-check',
+    title: 'ادخال الجيل الاول',
+    icon: 'bi bi-card-text',
     class: '',
     extralink: false,
     submenu: []

@@ -1,6 +1,7 @@
 import { Input, Component, OnInit } from '@angular/core';
 import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgFor, NgIf } from '@angular/common';
+import { Product, TableRows, TopSelling,Employee } from '../table/table-data';
 
 @Component({
   selector: 'app-ngbd-alert',
@@ -19,48 +20,14 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class NgbdAlertBasicComponent {
   // this is for the Closeable Alert
-  @Input() public alerts: Array<IAlert> = [];
+  topSelling: Product[];
 
-  private backup: Array<IAlert>;
+  trow: TableRows[];
+
   constructor() {
-    this.alerts.push(
-      {
-        id: 1,
-        type: 'primary',
-        message: 'This is a primary alert',
-      },
-      {
-        id: 2,
-        type: 'info',
-        message: 'This is an info alert',
-      },
-      {
-        id: 3,
-        type: 'success',
-        message: 'This is an success alert',
-      },
-      {
-        id: 4,
-        type: 'warning',
-        message: 'This is a warning alert',
-      },
-      {
-        id: 5,
-        type: 'danger',
-        message: 'This is a danger alert',
-      },
-      {
-        id: 6,
-        type: 'secondary',
-        message: 'This is an secondary alert',
-      }
-    );
-    this.backup = this.alerts.map((alert: IAlert) => Object.assign({}, alert));
-  }
-}
 
-export interface IAlert {
-  id: number;
-  type: string;
-  message: string;
+    this.topSelling = TopSelling;
+
+    this.trow = Employee;
+  }
 }
