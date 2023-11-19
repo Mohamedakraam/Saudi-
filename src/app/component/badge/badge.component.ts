@@ -4,10 +4,9 @@ import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { Product, TableRows, TopSelling,Employee } from '../table/table-data';
 @Component({
   templateUrl: "badge.component.html",
-  selector: 'app-ngbd-alert',
+  selector: 'app-ngbd-badge',
   standalone: true,
   imports: [NgbAlertModule, NgFor, NgIf],
-  // templateUrl: 'badge.component.html',
   styles: [
     `
       .alert-custom {
