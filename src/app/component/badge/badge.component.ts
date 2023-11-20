@@ -7,15 +7,7 @@ import { Product, TableRows, TopSelling,Employee } from '../table/table-data';
   selector: 'app-ngbd-badge',
   standalone: true,
   imports: [NgbAlertModule, NgFor, NgIf],
-  styles: [
-    `
-      .alert-custom {
-        color: #cc4dd5;
-        background-color: #f0c4f3;
-        border-color: #f0c4f3;
-      }
-    `,
-  ],
+  styleUrls: ['badge.component.scss']
 })
 
 export class BadgeComponent { 
