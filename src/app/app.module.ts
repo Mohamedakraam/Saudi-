@@ -20,12 +20,27 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { Approutes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SpinnerComponent } from './shared/spinner.component';
+import { WebsiteComponent } from './website/website.component';
+import { HeaderWebComponent } from './header-web/header-web.component';
+import { ContentWebComponent } from './content-web/content-web.component';
+import { ContentFirstWebComponent } from './content-first-web/content-first-web.component';
+import { ContentSecondWebComponent } from './content-second-web/content-second-web.component';
+import { ContentThirdWebComponent } from './content-third-web/content-third-web.component';
+import { ContentFourthWebComponent } from './content-fourth-web/content-fourth-web.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SpinnerComponent,
+    WebsiteComponent,
+    HeaderWebComponent,
+    ContentWebComponent,
+    ContentFirstWebComponent,
+    ContentSecondWebComponent,
+    ContentThirdWebComponent,
+    ContentFourthWebComponent,
+
   ],
   imports: [
     CommonModule,
@@ -39,6 +54,7 @@ import { SpinnerComponent } from './shared/spinner.component';
     FullComponent,
     SidebarComponent,
     NavigationComponent,
+
   ],
   providers: [
     {

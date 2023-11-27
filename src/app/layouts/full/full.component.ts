@@ -10,13 +10,13 @@ import { SidebarComponent } from "src/app/shared/sidebar/sidebar.component";
 @Component({
   selector: "app-full-layout",
   standalone: true,
-  imports:[RouterModule, SidebarComponent, NavigationComponent, CommonModule, NgbCollapseModule],
   templateUrl: "./full.component.html",
   styleUrls: ["./full.component.scss"],
+  imports: [RouterModule, SidebarComponent, NavigationComponent, CommonModule, NgbCollapseModule]
 })
 export class FullComponent implements OnInit {
 
-  constructor(public router: Router) {}
+  constructor(public router: Router) { }
   public isCollapsed = false;
   public innerWidth: number = 0;
   public defaultSidebar: string = "";

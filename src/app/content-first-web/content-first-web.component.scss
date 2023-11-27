@@ -1,0 +1,41 @@
+* {
+    transition: all .5s;
+    transform-style: preserve-3d;
+}
+
+.cardPos {
+    position: relative;
+    left: 38%;
+    margin-bottom: 10%;
+
+}
+
+.cardPos:hover {
+    cursor: pointer;
+
+}
+
+.textAlign:hover {
+    text-align: center;
+    background-color: rgba(128, 121, 121, 0.681);
+
+}
+
+.textAlign {
+    text-align: center;
+    background-color: rgba(208, 207, 207, 0.681);
+    border-radius: 10px;
+}
+
+
+.titleDiv {
+    position: relative;
+    left: 40%;
+    text-align: center;
+    width: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-bottom: 1px solid black !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
